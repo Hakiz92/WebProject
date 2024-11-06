@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header_container" style="display: flex; justify-content: space-between; align-items: center; position: sticky; top: -10px; z-index: 1000;  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)">
+            <div class="header_img";>
+                <a href="../html/homepage.html" class="navbar-brand" >
+                    <img src="../img/logo.svg"  alt="Logo">
+                </a>
+            </div>
+            <div class="header_nav">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Bán xe
+                                </a>
+                                <hr>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Các hãng xe nhận thu mua</a>
+                                    <a class="dropdown-item" href="#">Ford</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/muaxe.html">Mua xe</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/tieuchuan.html">Tiêu chuẩn kiểm tra xe</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/vechungtoi.html">Về chúng tôi</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/baohanh.html">Bảo hành</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cộng tác viên</a>
+                                <hr>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </nav>
+            </div>
+            <div class="header_moblie">
+                <a href="tel:0933605XXX" class="contact-btn">
+                    <i class="fas fa-phone-alt"></i> 0933 605 XXX
+                </a>
+            </div>
+        </div>
+
+        <div class="homepage_banner" style="display: flex; align-items: center; justify-content: center">
+            <img src="../img/referral_buyer.webp" style="max-width: 100%; height: auto; width: 600px" alt="">
+        </div>
+
+        <div class="container-car">
+            <h1>Dòng xe phổ biến</h1>
+  <div class="car-container">
+    <div class="car-card">
+      <img src="../img/xe1.jpeg" alt="Suzuki Swift GLX 2021">
+      <h3>Suzuki Swift GLX 2021</h3>
+      <p>20.000 KM</p>
+      <p>Số tự động</p>
+      <p class="price">469.000.000 VND</p>
+    </div>
+    <div class="car-card">
+      <img src="../img/xe2.jpeg" alt="Honda Brio RS 2019">
+      <h3>Honda Brio RS 2019</h3>
+      <p>30.000 KM</p>
+      <p>Số tự động</p>
+      <p class="price">350.000.000 VND</p>
+    </div>
+    <div class="car-card">
+      <img src="../img/xe3.jpeg" alt="Hyundai i10 2019">
+      <h3>30tr Hyundai i10 MT</h3>
+      <p>63.000 KM</p>
+      <p>Số sàn</p>
+      <p class="price">270.000.000 VND</p>
+    </div>
+    <div class="car-card">
+        <img src="../img/xe4.jpeg" alt="Mitsu Attrage Premium">
+        <h3>Mitsu Attrage Premium</h3>
+        <p>26.000 KM</p>
+        <p>Số tự động</p>
+        <p class="price">379.000.000 VND</p>
+      </div>
+      <div class="car-card">
+        <img src="../img/xe5.jpeg" alt="Toyota Corolla Cross">
+        <h3>Toyota Corolla Cross</h3>
+        <p>37.000 KM</p>
+        <p>Số tự động</p>
+        <p class="price">699.000.000 VND</p>
+      </div>
+      <div class="car-card">
+        <img src="../img/xe6.jpeg" alt="Hyundai i10 AT Sedan">
+        <h3>Hyundai i10 AT Sedan</h3>
+        <p>25.000 KM</p>
+        <p>Số tự động</p>
+        <p class="price">370.000.000 VND</p>
+      </div>
+  </div>
+        </div>
+
+    <div class="muaxe-review" style="background-color: red; padding: 20px;">
+       <h2 style= "justify-content: center; align-items: center; text-align: center; color: white;">An tâm trải nghiệm mua xe tại Chợ Tốt Xe</h2>
+    <div class="container-review">
+    <div class="card-view" style="background-color: white;">
+    <img src="../img/rv1.png" alt="Chất Lượng">
+    <h3>An tâm về Chất Lượng</h3>
+    <p style="text-align: left;">Mỗi chiếc xe trao đến khách hàng như một "bí cam" đảm bảo chất lượng. Đội ngũ Chợ Tốt Xe kiểm tra nghiêm ngặt về chất lượng sản phẩm đầu vào. Với mong muốn đem lại sự hài lòng cho khách hàng chính là thành công của chúng tôi.</p>
+    </div>
+    <div class="card-view"  style="background-color: white;">
+    <img src="../img/rv2.png" alt="Tài Chính">
+    <h3>An tâm về Tài Chính</h3>
+    <p style="text-align: left;">Tại Chợ Tốt Xe, khách hàng sẽ được đội ngũ tư vấn rõ ràng về thủ tục, biểu phí vay phù hợp. Duyệt vay nhanh chóng, giúp khách hàng nhận xe ngay tại showroom.</p>
+    </div>
+    <div class="card-view" style="background-color: white;">
+    <img src="../img/rv3.png" alt="Hậu Mãi">
+    <h3>An tâm về Hậu Mãi</h3>
+    <p style="text-align: left;">Khách hàng được bảo hành 12 tháng cho những xe mua tại Chợ Tốt Xe. Hỗ trợ thu cũ, đổi mới khi khách hàng thay đổi mục đích sử dụng.</p>
+    </div>
+     </div>
+    </div>
+
+    </header>
+
+    <footer>
+        <div class="logo-footer" style="display: flex; justify-content: center; align-items: center; background-color: black;" >
+            <img src="../img/logo.svg" alt="Chợ Tốt Xe">
+        </div>
+        <div class="footer" style="background-color: black; display: flex; justify-content: space-between;">
+            <div class="footer-content">
+                <h3 style="color: white;">CÔNG TY TNHH CHỢ TỐT TRADING</h3>
+                <p style="color: white;">Người đại diện theo pháp luật: Nguyễn Trọng Tấn</p>
+                <p style="color: white;">GPDKKD: 0317493996 do sở KH & ĐT TP.HCM cấp ngày 27/09/2022</p>
+                <a href="#"><img src="../img/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="../img/tiktok.svg" alt="TikTok"></a>
+                <a href="#"><img src="../img/youtube.svg" alt="YouTube"></a>
+            </div>
+           <div class="footer-link">
+            <nav>
+                <ul class="navigation">
+                    <h3 style="color: white;">Liên kết trang</h3>
+                    <li><a href="#" style="color: white;">Bán xe</a></li>
+                    <li><a href="#" style="color: white;">Mua xe</a></li>
+                    <li><a href="#" style="color: white;">Tiêu chuẩn kiểm tra xe</a></li>
+                    <li><a href="#" style="color: white;">Về chúng tôi</a></li>
+                    <li><a href="#" style="color: white;">Bảo hành</a></li>
+                    <li><a href="#" style="color: white;">Cộng tác viên</a></li>
+                </ul>
+            </nav>
+           </div>
+            <div class="contact-info">
+                <h3 style="color: white;">Thông tin liên hệ</h3>
+                <p style="color: white;"><strong>Địa chỉ văn phòng:</strong> Tầng 18, UOA Tower, 06 Tân Trào, Tân</p>
+                <p style="color: white;">Phú, Quận 7, TP Hồ Chí Minh</p>
+                <p style="color: white;"><strong>Địa chỉ Showroom:</strong> Số 554 Lê Văn Lương, Phường Tân</p>
+                <p style="color: white;">Phong, Quận 7, Tp. HCM</p>
+                <p style="color: white;"><strong>Hotline:</strong> 0933 605 469</p>
+                <p style="color: white;"><strong>Email:</strong> chototxe.officialmall@chotot.vn</p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

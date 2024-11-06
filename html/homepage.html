@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        function showContent(step) {
+            // Ẩn tất cả các nội dung
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+
+            // Hiển thị nội dung tương ứng với bước được chọn
+            const contentToShow = document.getElementById(`content${step}`);
+            contentToShow.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="header_container" style="display: flex; justify-content: space-between; align-items: center; position: sticky; top: -10px; z-index: 1000;  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)">
+            <div class="header_img";>
+                <a href="../html/homepage.html" class="navbar-brand" >
+                    <img src="../img/logo.svg"  alt="Logo">
+                </a>
+            </div>
+            <div class="header_nav">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Bán xe
+                                </a>
+                                <hr>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Các hãng xe nhận thu mua</a>
+                                    <a class="dropdown-item" href="#">Ford</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/muaxe.html">Mua xe</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/tieuchuan.html">Tiêu chuẩn kiểm tra xe</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/vechungtoi.html">Về chúng tôi</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/baohanh.html">Bảo hành</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cộng tác viên</a>
+                                <hr>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </nav>
+            </div>
+            <div class="header_moblie">
+                <a href="tel:0933605XXX" class="contact-btn">
+                    <i class="fas fa-phone-alt"></i> 0933 605 XXX
+                </a>
+            </div>
+        </div>
+
+        <div class="homepage_banner" style="display: flex; align-items: center; justify-content: center">
+            <img src="../img/sellout.webp" style="max-width: 100%; height: auto; width: 600px" alt="">
+        </div>
+
+        <main>
+            <section class="info-section">
+                <div class="title_homepage">
+                    <h2>Tại sao nên bán xe cho Chợ Tốt Xe</h2>
+                </div>
+                
+                <hr>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-icon">🚗</div>
+                        <h3>Bán xe nhanh chóng trong ngày</h3>
+                        <p>Hạn chế cò lái ép giá. Biết được giá bán đúng với tình trạng xe. Không bán cũng hoan hỷ.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💰</div>
+                        <h3>Nhận tiền ngay sau khi công chứng</h3>
+                        <p>Tất toán nhanh chóng. Nhận tiền liền trong vòng 10-20 phút.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📄</div>
+                        <h3>Thủ tục linh hoạt, nhanh gọn</h3>
+                        <p>Miễn phí công chứng. Linh hoạt chọn công chứng tại nhà hoặc tại căn phòng. Công chứng tại nhà chỉ 5 phút.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+            <div class="centered-container">
+                <div class="title_homepage">
+                <h2>Bán xe nhanh chóng theo 4 bước</h2>
+            </div>
+            <div class="steps_homepage">
+                <div class="steps">
+                    <div class="step" onclick="showContent(1)">Bước 1: Chọn xe bạn muốn bán</div>
+                    <div class="content" id="content1">
+                        <h2>Bước 1: Chọn xe bạn muốn bán</h2>
+                        <p>Chọn các thông tin xe bạn muốn bán và để lại SĐT để nhân viên Chợ Tốt Xe liên hệ đặt lịch xem xe:</p>
+                        <ul>
+                            <li>Hãng xe</li>
+                            <li>Dòng xe</li>
+                            <li>Số km đã đi</li>
+                            <li>Năm sản xuất</li>
+                        </ul>
+                        <img src="../img/buoc1.webp" alt="Hình ảnh bước 1" class="step-image">
+                    </div>
+            
+                    <div class="step" onclick="showContent(2)">Bước 2: Đăng ký hẹn</div>
+                    <div class="content" id="content2">
+                        <h2>Bước 2: Đăng ký hẹn</h2>
+                        <p>Sau khi gửi thông tin, bạn nhớ chú ý điện thoại. Nhân viên Chợ Tốt Xe sẽ liên hệ trong vòng 24 giờ. Và tùy theo nhu cầu của bạn:</p>
+                        <ul>
+                            <li>Chợ Tốt Xe sẽ đặt lịch hẹn xem xe tại địa điểm bạn chọn.</li>
+                            <li>Hoặc Chợ Tốt Xe báo giá online trước cho bạn.</li>
+                        </ul>
+                        <img src="../img/buoc2.webp" alt="Hình ảnh bước 2" class="step-image">
+                    </div>
+            
+                    <div class="step" onclick="showContent(3)">Bước 3: Kiểm tra xe và thương lượng giá</div>
+                    <div class="content" id="content3">
+                        <h2>Bước 3: Kiểm tra xe và thương lượng giá</h2>
+                        <p>Chuyên viên Chợ Tốt Xe sẽ tới điểm hẹn và kiểm tra chất lượng xe toàn diện theo tiêu chuẩn 207 hạng mục.</p>
+                        <ul>
+                            <li>Miễn phí kiểm tra và tư vấn giá bán đúng với tình trạng xe của bạn.</li>
+                        </ul>
+                        <img src="../img/buoc3.webp" alt="Hình ảnh bước 3" class="step-image">
+                        
+                    </div>
+            
+                    <div class="step" onclick="showContent(4)">Bước 4: Chuyển quyền sở hữu, Bàn giao xe và Nhận thanh toán</div>
+                    <div class="content" id="content4">
+                        <h2>Bước 4: Chuyển quyền sở hữu, Bàn giao xe và Nhận thanh toán</h2>
+                        <p>Sau khi đồng ý về giá, chuyên viên Chợ Tốt Xe sẽ hỗ trợ bạn trong quá trình thực hiện các thủ tục pháp lý để chuyển quyền sở hữu chiếc xe.</p>
+                        <ul>
+                            <li>Bạn cần chuẩn bị các giấy tờ của xe và chủ xe. Chỉ tiết các loại giấy tờ, bạn xem thêm ở mục Câu hỏi thường gặp bên dưới.</li>
+                            <li>Ngay khi hoàn tất công chứng, Chợ Tốt Xe sẽ thanh toán cho bạn theo đúng mức giá thống nhất trong vòng 10 - 20 phút.</li>
+                        </ul>
+                        <img src="../img/buoc4.webp" alt="Hình ảnh bước 4" class="step-image">
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="container-video">
+                <h1>Quy trình kiểm tra và thu mua xe</h1>
+                <div class="video-container">
+                    <iframe src="https://youtu.be/irZLGhd-dbE" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="promo">
+                    <h2>CHỨNG NHẬN XE 5 TỐT</h2>
+                    <p>CHUYÊN GIA KHÁM XE, BẠN AN TÂM CHỐT XE</p>
+                </div>
+            </div>
+
+            <div class="container-car">
+                <h1>Các hãng xe nhận thu mua</h1>
+                <p>Năm sản xuất từ năm 2015</p>
+                <p>Số Odo không vượt quá 80.000 km</p>
+                <div class="logos-car">
+                    <div class="logo-car"><img src="../img/ford.webp" alt="Ford"></div>
+                    <div class="logo-car"><img src="../img/honda.webp" alt="Honda"></div>
+                    <div class="logo-car"><img src="../img/hyundai.webp" alt="Hyundai"></div>
+                    <div class="logo-car"><img src="../img/kia.webp" alt="Kia"></div>
+                    <div class="logo-car"><img src="../img/mazda.webp" alt="Mazda"></div>
+                    <div class="logo-car"><img src="../img/mercedes.webp" alt="Mercedes"></div>
+                    <div class="logo-car"><img src="../img/mg.webp" alt="MG"></div>
+                    <div class="logo-car"><img src="../img/mitsubishi.webp" alt="Mitsubishi"></div>
+                    <div class="logo-car"><img src="../img/nissan.webp" alt="Nissan"></div>
+                    <div class="logo-car"><img src="../img/peugeot.webp" alt="Peugeot"></div>
+                    <div class="logo-car"><img src="../img/suzuki.webp" alt="Suzuki"></div>
+                    <div class="logo-car"><img src="../img/toyota.webp" alt="Toyota"></div>
+                    <div class="logo-car"><img src="../img/vinfast.webp" alt="VinFast"></div>
+                </div>
+            </div>
+        </header>
+
+        <footer>
+            <div class="logo-footer" style="display: flex; justify-content: center; align-items: center; background-color: black;" >
+                <img src="../img/logo.svg" alt="Chợ Tốt Xe">
+            </div>
+            <div class="footer" style="background-color: black; display: flex; justify-content: space-between;">
+                <div class="footer-content">
+                    <h3 style="color: white;">CÔNG TY TNHH CHỢ TỐT TRADING</h3>
+                    <p style="color: white;">Người đại diện theo pháp luật: Nguyễn Trọng Tấn</p>
+                    <p style="color: white;">GPDKKD: 0317493996 do sở KH & ĐT TP.HCM cấp ngày 27/09/2022</p>
+                    <a href="#"><img src="../img/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="../img/tiktok.svg" alt="TikTok"></a>
+                    <a href="#"><img src="../img/youtube.svg" alt="YouTube"></a>
+                </div>
+               <div class="footer-link">
+                <nav>
+                    <ul class="navigation">
+                        <h3 style="color: white;">Liên kết trang</h3>
+                        <li><a href="#" style="color: white;">Bán xe</a></li>
+                        <li><a href="#" style="color: white;">Mua xe</a></li>
+                        <li><a href="#" style="color: white;">Tiêu chuẩn kiểm tra xe</a></li>
+                        <li><a href="#" style="color: white;">Về chúng tôi</a></li>
+                        <li><a href="#" style="color: white;">Bảo hành</a></li>
+                        <li><a href="#" style="color: white;">Cộng tác viên</a></li>
+                    </ul>
+                </nav>
+               </div>
+                <div class="contact-info">
+                    <h3 style="color: white;">Thông tin liên hệ</h3>
+                    <p style="color: white;"><strong>Địa chỉ văn phòng:</strong> Tầng 18, UOA Tower, 06 Tân Trào, Tân</p>
+                    <p style="color: white;">Phú, Quận 7, TP Hồ Chí Minh</p>
+                    <p style="color: white;"><strong>Địa chỉ Showroom:</strong> Số 554 Lê Văn Lương, Phường Tân</p>
+                    <p style="color: white;">Phong, Quận 7, Tp. HCM</p>
+                    <p style="color: white;"><strong>Hotline:</strong> 0933 605 469</p>
+                    <p style="color: white;"><strong>Email:</strong> chototxe.officialmall@chotot.vn</p>
+                </div>
+            </div>
+
+            
+        </footer>
+    
+
+</body>
+</html>
