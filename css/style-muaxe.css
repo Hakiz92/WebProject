@@ -1,0 +1,99 @@
+.container-car1{
+    text-align: center;
+    padding: 20px
+}
+
+.logos-car {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.logo-car {
+    margin: 10px;
+}
+
+.logo-car img {
+    max-width: 100px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+.navigation {
+    list-style-type: none;
+    /* Bỏ dấu chấm đầu mục */
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.navigation li {
+    display: block;
+    /* Đảm bảo các mục nằm dọc */
+    margin-bottom: 10px;
+    /* Tạo khoảng cách giữa các mục */
+}
+
+.car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    max-width: 1000px;
+    align-items: center;
+}
+
+.car-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    flex: 1 1 300px;
+}
+
+.car-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.car-card h3 {
+    margin-top: 10px;
+}
+
+.car-card p {
+    margin: 5px 0;
+}
+
+.car-card .price {
+    color: red;
+    font-weight: bold;
+}
+
+.container-review {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card-view {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-view img {
+    width: 80px;
+    height: 80px;
+}
+
+.card-view h3 {
+    margin-top: 10px;
+}
+
+.card-view p {
+    margin: 10px 0;
+}

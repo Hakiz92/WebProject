@@ -1,0 +1,41 @@
+.tieuchuan {
+    margin-top: 10px;
+    text-align: center;
+    /* Đảm bảo nội dung trong h1 và các phần tử con được canh giữa */
+}
+
+.container-tieuchuan {
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    gap: 20px;
+    flex-direction: column;
+    width: max-content;
+    margin: 0 auto;
+    max-width: 745px;
+}
+
+.card-tieuchuan {
+    display: flex;
+    /* Dùng flexbox để chia bố cục ngang */
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.card-tieuchuan h2 {
+    margin-top: 0;
+}
+
+.card-tieuchuan ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.card-tieuchuan img {
+    max-width: 200px;
+    /* Giới hạn chiều rộng hình ảnh */
+    margin-left: 20px;
+    /* Khoảng cách giữa văn bản và hình ảnh */
+}

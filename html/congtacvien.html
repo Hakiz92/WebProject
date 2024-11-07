@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/style-homepage.css">
     <link rel="stylesheet" href="../css/style-muaxe.css">
     <link rel="stylesheet" href="../css/style-tieuchuan.css">
     <link rel="stylesheet" href="../css/style-aboutus.css">
+    <link rel="stylesheet" href="../css/style-congtacvien.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </head>
 <body>
-
     <header>
         <div class="header_container" style="display: flex; justify-content: space-between; align-items: center; position: sticky; top: -10px; z-index: 1000;  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)">
             <div class="header_img";>
@@ -70,80 +70,41 @@
             </div>
         </div>
 
-        <div class="homepage_banner" style="display: flex; align-items: center; justify-content: center">
-            <img src="../img/referral_buyer.webp" style="max-width: 100%; height: auto; width: 600px" alt="">
+        <div class="banner">
+            <img src="../img/congtacvien2.webp" alt="Background Image" class="banner-image">
+            <div class="form-container">
+                <h3>Bớt vài phút điền thông tin để tăng cơ hội kiếm tiền!!</h3>
+                <form>
+                    <label for="phone">Số điện thoại của bạn *</label>
+                    <input type="text" id="phone" name="phone" placeholder="Số điện thoại của bạn" required>
+        
+                    <label for="name">Tên khách hàng *</label>
+                    <input type="text" id="name" name="name" placeholder="Tên khách hàng" required>
+        
+                    <label for="relation">Tôi muốn giới thiệu</label>
+                    <select id="relation" name="relation">
+                        <option value="buyer">Người mua</option>
+                        <option value="seller">Người bán</option>
+                    </select>
+        
+                    <label for="phone2">Số điện thoại khách hàng (nếu có)</label>
+                    <input type="text" id="phone2" name="phone2" placeholder="Số điện thoại khách hàng (nếu có)">
+        
+                    <label for="interest">Chọn xe quan tâm</label>
+                    <select id="interest" name="interest">
+                        <option value="car1">Xe 1</option>
+                        <option value="car2">Xe 2</option>
+                        <option value="car3">Xe 3</option>
+                    </select>
+        
+                    <button type="submit">GIỚI THIỆU NGAY</button>
+                </form>
+            </div>
         </div>
-
-        <div class="container-car1">
-            <h1>Dòng xe phổ biến</h1>
-  <div class="car-container">
-    <div class="car-card">
-      <img src="../img/xe1.jpeg" alt="Suzuki Swift GLX 2021">
-      <h3>Suzuki Swift GLX 2021</h3>
-      <p>20.000 KM</p>
-      <p>Số tự động</p>
-      <p class="price">469.000.000 VND</p>
-    </div>
-    <div class="car-card">
-      <img src="../img/xe2.jpeg" alt="Honda Brio RS 2019">
-      <h3>Honda Brio RS 2019</h3>
-      <p>30.000 KM</p>
-      <p>Số tự động</p>
-      <p class="price">350.000.000 VND</p>
-    </div>
-    <div class="car-card">
-      <img src="../img/xe3.jpeg" alt="Hyundai i10 2019">
-      <h3>30tr Hyundai i10 MT</h3>
-      <p>63.000 KM</p>
-      <p>Số sàn</p>
-      <p class="price">270.000.000 VND</p>
-    </div>
-    <div class="car-card">
-        <img src="../img/xe4.jpeg" alt="Mitsu Attrage Premium">
-        <h3>Mitsu Attrage Premium</h3>
-        <p>26.000 KM</p>
-        <p>Số tự động</p>
-        <p class="price">379.000.000 VND</p>
-      </div>
-      <div class="car-card">
-        <img src="../img/xe5.jpeg" alt="Toyota Corolla Cross">
-        <h3>Toyota Corolla Cross</h3>
-        <p>37.000 KM</p>
-        <p>Số tự động</p>
-        <p class="price">699.000.000 VND</p>
-      </div>
-      <div class="car-card">
-        <img src="../img/xe6.jpeg" alt="Hyundai i10 AT Sedan">
-        <h3>Hyundai i10 AT Sedan</h3>
-        <p>25.000 KM</p>
-        <p>Số tự động</p>
-        <p class="price">370.000.000 VND</p>
-      </div>
-  </div>
-        </div>
-
-    <div class="muaxe-review" style="background-color: red; padding: 20px;">
-       <h2 style= "justify-content: center; align-items: center; text-align: center; color: white;">An tâm trải nghiệm mua xe tại Chợ Tốt Xe</h2>
-    <div class="container-review">
-    <div class="card-view" style="background-color: white;">
-    <img src="../img/rv1.png" alt="Chất Lượng">
-    <h3>An tâm về Chất Lượng</h3>
-    <p style="text-align: left;">Mỗi chiếc xe trao đến khách hàng như một "bí cam" đảm bảo chất lượng. Đội ngũ Chợ Tốt Xe kiểm tra nghiêm ngặt về chất lượng sản phẩm đầu vào. Với mong muốn đem lại sự hài lòng cho khách hàng chính là thành công của chúng tôi.</p>
-    </div>
-    <div class="card-view"  style="background-color: white;">
-    <img src="../img/rv2.png" alt="Tài Chính">
-    <h3>An tâm về Tài Chính</h3>
-    <p style="text-align: left;">Tại Chợ Tốt Xe, khách hàng sẽ được đội ngũ tư vấn rõ ràng về thủ tục, biểu phí vay phù hợp. Duyệt vay nhanh chóng, giúp khách hàng nhận xe ngay tại showroom.</p>
-    </div>
-    <div class="card-view" style="background-color: white;">
-    <img src="../img/rv3.png" alt="Hậu Mãi">
-    <h3>An tâm về Hậu Mãi</h3>
-    <p style="text-align: left;">Khách hàng được bảo hành 12 tháng cho những xe mua tại Chợ Tốt Xe. Hỗ trợ thu cũ, đổi mới khi khách hàng thay đổi mục đích sử dụng.</p>
-    </div>
-     </div>
-    </div>
+        
 
     </header>
+
 
     <footer>
         <div class="logo-footer" style="display: flex; justify-content: center; align-items: center; background-color: black;" >
@@ -181,6 +142,7 @@
                 <p style="color: white;"><strong>Email:</strong> chototxe.officialmall@chotot.vn</p>
             </div>
         </div>
+
         
     </footer>
 </body>

@@ -4,23 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-homepage.css">
+    <link rel="stylesheet" href="../css/style-muaxe.css">
+    <link rel="stylesheet" href="../css/style-tieuchuan.css">
+    <link rel="stylesheet" href="../css/style-aboutus.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script>
-        function showContent(step) {
-            // Ẩn tất cả các nội dung
-            const contents = document.querySelectorAll('.content');
-            contents.forEach(content => {
-                content.style.display = 'none';
-            });
-
-            // Hiển thị nội dung tương ứng với bước được chọn
-            const contentToShow = document.getElementById(`content${step}`);
-            contentToShow.style.display = 'block';
-        }
-    </script>
 </head>
 <body>
     <div class="header_container" style="display: flex; justify-content: space-between; align-items: center; position: sticky; top: -10px; z-index: 1000;  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)">
@@ -63,7 +53,7 @@
                             <hr>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cộng tác viên</a>
+                            <a class="nav-link" href="../html/congtacvien.html">Cộng tác viên</a>
                             <hr>
                         </li>
                     </ul>
